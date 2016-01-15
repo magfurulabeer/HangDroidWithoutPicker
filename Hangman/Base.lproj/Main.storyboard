@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dXh-qc-w26">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ecm-zB-VKg">
+            <objects>
+                <viewController id="dXh-qc-w26" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nwq-yZ-yr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="kHR-fI-PcZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TFR-dz-VLf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hangman0" translatesAutoresizingMaskIntoConstraints="NO" id="880-0N-ZqF">
+                                <rect key="frame" x="-82" y="53" width="341" height="239"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidhead" translatesAutoresizingMaskIntoConstraints="NO" id="3hd-OT-ioA">
+                                <rect key="frame" x="-10" y="90" width="240" height="125"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidbody" translatesAutoresizingMaskIntoConstraints="NO" id="nFk-Gc-ehX">
+                                <rect key="frame" x="-10" y="90" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidleftarm" translatesAutoresizingMaskIntoConstraints="NO" id="NDR-WC-flN">
+                                <rect key="frame" x="-10" y="90" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidrightarm" translatesAutoresizingMaskIntoConstraints="NO" id="IWG-xZ-hm6">
+                                <rect key="frame" x="-10" y="90" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidleftleg" translatesAutoresizingMaskIntoConstraints="NO" id="BMa-GQ-U6e">
+                                <rect key="frame" x="-10" y="90" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="androidrightleg" translatesAutoresizingMaskIntoConstraints="NO" id="dBi-i1-z6t">
+                                <rect key="frame" x="-10" y="89" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4de-gC-F9v">
+                                <rect key="frame" x="8" y="280" width="304" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HangDroid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-Ci-Tdx">
+                                <rect key="frame" x="8" y="11" width="304" height="46"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                <color key="textColor" red="0.53725490196078429" green="0.77254901960784317" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xq-ZH-9Yc">
+                                <rect key="frame" x="278" y="526" width="22" height="22"/>
+                                <connections>
+                                    <action selector="hintButton:" destination="dXh-qc-w26" eventType="touchUpInside" id="xFc-Tw-OwJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a letter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pIU-dT-cF8">
+                                <rect key="frame" x="35" y="242" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dXh-qc-w26" id="0cL-Hq-5sI"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZ1-nW-RLN">
+                                <rect key="frame" x="8" y="280" width="304" height="35"/>
+                                <connections>
+                                    <action selector="guessAnswer:" destination="dXh-qc-w26" eventType="touchUpInside" id="hhr-Kg-Zx4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="androidBody" destination="nFk-Gc-ehX" id="a6y-oO-eW7"/>
+                        <outlet property="androidHead" destination="3hd-OT-ioA" id="tLI-MC-1nK"/>
+                        <outlet property="androidLeftArm" destination="NDR-WC-flN" id="pf2-zd-zPO"/>
+                        <outlet property="androidLeftLeg" destination="BMa-GQ-U6e" id="bV0-Ah-e9J"/>
+                        <outlet property="androidRightArm" destination="IWG-xZ-hm6" id="oqr-0b-R1x"/>
+                        <outlet property="androidRightLeg" destination="dBi-i1-z6t" id="YRM-i3-RFx"/>
+                        <outlet property="label" destination="4de-gC-F9v" id="6n9-q3-04F"/>
+                        <outlet property="textField" destination="pIU-dT-cF8" id="OU4-pc-3We"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ain-qd-CBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hangman0" width="257" height="288"/>
+        <image name="androidbody" width="320" height="320"/>
+        <image name="androidhead" width="320" height="320"/>
+        <image name="androidleftarm" width="320" height="320"/>
+        <image name="androidleftleg" width="320" height="320"/>
+        <image name="androidrightarm" width="320" height="320"/>
+        <image name="androidrightleg" width="320" height="320"/>
+    </resources>
+</document>

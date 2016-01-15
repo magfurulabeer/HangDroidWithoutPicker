@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hello World</key>
+	<string>First project in every language</string>
+	<key>Another One</key>
+	<string>DJ Khalid</string>
+	<key>Objective C</key>
+	<string>Primary iOS Language</string>
+	<key>Hangman</key>
+	<string>The game you&apos;re playing</string>
+	<key>Hello</key>
+	<string>Adele</string>
+	<key>Flatiron</key>
+	<string>The school you&apos;re in</string>
+</dict>
+</plist>
